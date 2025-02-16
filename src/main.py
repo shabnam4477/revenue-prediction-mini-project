@@ -1,5 +1,7 @@
 import pandas as pd
 import logging
+from matplotlib import pyplot as plt
+import time
 
 from sklearn.model_selection import train_test_split
 
@@ -15,18 +17,57 @@ logging.basicConfig(
 )
 
 
+def plot_result(y_test, y_predict):
+    # Plot the actual vs predicted values and residuals
+    plt.figure(figsize=(14, 10))
+
+    # Subplot 1: Actual vs Predicted Values
+    plt.subplot(2, 1, 1)
+    plt.scatter(y_test.index, y_test, label="Actual Values")
+    # plt.plot(y_predict, label='Predicted Values')
+    plt.title('Revenue Prediction')
+    plt.xlabel("Samples")
+    plt.ylabel("Revenue")
+    plt.legend()
+
+    # Subplot 2: Residual Plot
+    # residuals = y_test - y_predict
+    # plt.subplot(2, 1, 2)
+    # plt.scatter(range(len(residuals)), residuals)
+    # plt.hlines(y=0, xmin=0, xmax=len(residuals), colors='r', linestyles='--')
+    # plt.title('Residual Plot')
+    # plt.xlabel('Samples')
+    # plt.ylabel('Residuals Actual - Predict')
+
+    # Show the plots
+    plt.tight_layout()
+    plt.show()
+
+
 def run_pipeline(model: BaseModel, X_train, X_test, y_train, y_test, X, target):
     model.train(X_train, y_train)
-    mse = model.evaluate(X_test, y_test)
+    MSE, MAPE, SMAPE, custom_metric = model.evaluate(X_test, y_test)
     cv_mse = model.cross_validate(X, target, scoring="neg_mean_squared_error")
+    cv_MAPE = model.cross_validate(X, target, scoring="neg_mean_absolute_percentage_error")
     cv_score = model.cross_validate(X, target)
-    model_score = model.calculate_model_score(X_test, y_test)
+    test_score = model.calculate_model_score(X_test, y_test)
     train_score = model.calculate_model_score(X_train, y_train)
-    logging.info(f"MSE is {mse}")
-    logging.info(f"cross validation mse is {cv_mse}")
+    logging.info(f"MSE is {MSE}")
+    logging.info(f"MAPE is {MAPE}")
+    logging.info(f"SMAPE is {SMAPE}")
+    logging.info(f"custom_metric is {custom_metric}")
+    logging.info("--------------------")
+    logging.info(f"cross validation MSE is {cv_mse}")
+    logging.info(f"cross validation MAPE is {cv_MAPE}")
     logging.info(f"cross validation score is {cv_score}")
-    logging.info(f"model score is {model_score}")
+    logging.info("--------------------")
+    logging.info(f"model score is {test_score}")
     logging.info(f"model score for training data is {train_score}")
+
+    y_predict = model.predict(X_test)
+    df = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict})
+    df.to_csv(f'estimate_{time.time()}.csv', index=False)
+    # plot_result(y_test=y_test, y_predict=y_predict)
 
 
 def main():
@@ -45,7 +86,7 @@ def main():
     print("y_test shape:", y_test.shape)
 
     # LinearRegressionModel
-    logging.info(">>>>> LinearRegression results")
+    logging.info("\n>>>>> LinearRegression results")
     model = LinearRegressionModel()
     X_train_selected, X_test_selected = model.feature_selection(X_train, y_train, X_test)
     run_pipeline(
@@ -59,7 +100,7 @@ def main():
     )
 
     # RandomForestRegressor
-    logging.info(">>>>> RandomForestRegressor results")
+    logging.info("\n>>>>> RandomForestRegressor results")
     parameters = {
         "n_estimators": [100, 150, 200, 250, 300],
         "max_depth": range(1, 5),
@@ -82,7 +123,7 @@ def main():
     )
 
     # XGBoost
-    logging.info(">>>>> XgBoostRegression results")
+    logging.info("\n>>>>> XgBoostRegression results")
     parameters = {
         "n_estimators": [10, 20, 30, 40],
         "max_depth": range(1, 5),
