@@ -21,6 +21,6 @@ class BaseModel:
         )
         mean_score = np.mean(scores)
         return mean_score
-    
+
     def calculate_model_score(self, X_test, y_test):
         return self.model.score(X_test, y_test)
