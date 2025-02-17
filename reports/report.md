@@ -59,7 +59,9 @@ Machine learning pipeline is a cycle, to improve the result we need to back to t
 ## Data prespective
 - Pick the diffrenet approach to fill the null values for missing data(fill with median and mean)
 - Pick different columns as features(use transaction_date column)
-- Use different range of hyperparameters for models(RandomForrest and XDBoost). The steps are changing the range and monitor the performance untill we find the best ranges(values) for hyper parameter
+- scale and transform the feature data
+## Hyperparameters
+Use different range of hyperparameters for models(RandomForrest and XDBoost). The steps are changing the range and monitor the performance untill we find the best ranges(values) for hyper parameter
 ```
 param_grid = {
     'n_estimators': [100, 200, 300],
@@ -73,7 +75,7 @@ changed the param ranges improve the model score
 best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
 model score is 0.5877614544718972
 ```
-## Tune hyperparameters
+### Tune hyperparameters
 Use different method for tune hyper parameters, we currently use GridSearchCV to tune hyperparameters, we can also try RandomizedSearchCV
 
 In the first run the score of random forrest using RandomizedSearchCV, was 0.5754971243809461, changed it to GridSearchCV, improved the score to 0.61
@@ -86,7 +88,7 @@ Efficiency: Given the potentially large number of hyperparameters, RandomizedSea
 # Result Observation
 ## Data analyse
 Analysing the predicted revenue in detail can be helpfull, how model perform for each individual company? how model perform predicting negative revenue? how model perform predicting positive revenue?
-the answer to above questions helps us to improve the performance by choosing different approach in data prepration or chosing the models or validation metrics
+the answer to above questions helps us improve the performance by choosing different approach in data prepration or choosing the models or validation metrics
 ## Model selection
 ### XGBRegressor
 XGBoost is known for its scalability and performance on large datasets, making it a good fit for complex data, not a good choice for our dataset
@@ -96,4 +98,7 @@ XGBoost result has overfitting, the train score is far from test score, because 
 Automatic feature selection was useful to improve the score of the linear regression but decrease the score of the random forrest and xdboost, since they need more features to learn and have good performance.
 
 ### RandomForestRegressor
+Works good on the data, It needs more hyperparameter tuning and spending more time to find the best hyperparameters.
+### LinearRegressionModel
+Works good on the data, The simplicity of the model makes it a good choice for our limited dataset. There is a chanse of improving the results by doing more data prepration.
 
