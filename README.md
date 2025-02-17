@@ -4,7 +4,7 @@ This project is a python script using machine learning models to predict revenue
 ## Reports
 Find the full observation report in `reports/report.md`
 ## Logs
-Find the prediction result log in `debug.log`
+Find the prediction result log in `reports/debug.log`
 ## Notebooks
 Find the data analyse steps and results in `notebooks/Data_Analyse.ipynb`
 
