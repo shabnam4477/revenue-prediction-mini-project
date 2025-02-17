@@ -1,0 +1,468 @@
+2025-02-16 17:09:21,905 [INFO] LinearRegressionModel results
+2025-02-16 17:09:21,906 [INFO] MSE is 947341.1633563662
+2025-02-16 17:09:21,906 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 17:09:21,906 [INFO] model score is 0.6337045953277438
+2025-02-16 17:09:26,961 [INFO] RandomForestRegressor results
+2025-02-16 17:09:26,961 [INFO] MSE is 1055865.3349084652
+2025-02-16 17:09:26,961 [INFO] cross validation mse is 1208437.3187074272
+2025-02-16 17:09:26,961 [INFO] model score is 0.591743043488743
+2025-02-16 18:01:19,820 [INFO] LinearRegressionModel results
+2025-02-16 18:01:19,820 [INFO] MSE is 947341.1633563662
+2025-02-16 18:01:19,820 [INFO] cross validation mse is -0.614916129962608
+2025-02-16 18:01:19,820 [INFO] model score is 0.6337045953277438
+2025-02-16 18:02:22,150 [INFO] LinearRegressionModel results
+2025-02-16 18:02:22,150 [INFO] MSE is 947341.1633563662
+2025-02-16 18:02:22,150 [INFO] cross validation mse is -0.614916129962608
+2025-02-16 18:02:22,150 [INFO] model score is 0.6337045953277438
+2025-02-16 18:02:54,018 [INFO] LinearRegressionModel results
+2025-02-16 18:02:54,018 [INFO] MSE is 947341.1633563662
+2025-02-16 18:02:54,018 [INFO] cross validation mse is -0.614916129962608
+2025-02-16 18:02:54,018 [INFO] model score is 0.6337045953277438
+2025-02-16 18:09:10,304 [INFO] LinearRegressionModel results
+2025-02-16 18:09:10,304 [INFO] MSE is 947341.1633563662
+2025-02-16 18:09:10,304 [INFO] cross validation mse is -0.614916129962608
+2025-02-16 18:09:10,304 [INFO] model score is 0.6337045953277438
+2025-02-16 18:10:15,403 [INFO] RandomForestRegressor results
+2025-02-16 18:10:15,404 [INFO] MSE is 975441.2472768208
+2025-02-16 18:10:15,404 [INFO] cross validation mse is -0.593980581419394
+2025-02-16 18:10:15,404 [INFO] model score is 0.6228395215727935
+2025-02-16 18:10:38,304 [INFO] XgBoostRegression results
+2025-02-16 18:10:38,304 [INFO] MSE is 1434642.2158212427
+2025-02-16 18:10:38,304 [INFO] cross validation mse is -0.4503454106750352
+2025-02-16 18:10:38,304 [INFO] model score is 0.4452865859408842
+2025-02-16 18:18:32,921 [INFO] LinearRegression results
+2025-02-16 18:19:34,343 [INFO] LinearRegression results
+2025-02-16 18:19:34,366 [INFO] MSE is 947341.1633563662
+2025-02-16 18:19:34,366 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 18:19:34,366 [INFO] cross validation score is -0.614916129962608
+2025-02-16 18:19:34,366 [INFO] model score is 0.6337045953277438
+2025-02-16 18:20:38,775 [INFO] RandomForestRegressor results
+2025-02-16 18:20:39,852 [INFO] MSE is 947652.5416753872
+2025-02-16 18:20:39,852 [INFO] cross validation mse is 1216904.6953032983
+2025-02-16 18:20:39,852 [INFO] cross validation score is -0.5970332575741268
+2025-02-16 18:20:39,852 [INFO] model score is 0.6335841989470272
+2025-02-16 18:20:56,970 [INFO] XgBoostRegression results
+2025-02-16 18:21:01,468 [INFO] MSE is 1621613.8412579068
+2025-02-16 18:21:01,468 [INFO] cross validation mse is 1601829.5978968167
+2025-02-16 18:21:01,468 [INFO] cross validation score is -0.4655796483848954
+2025-02-16 18:21:01,468 [INFO] model score is 0.37299283385804627
+2025-02-16 18:27:27,153 [INFO] XgBoostRegression results
+2025-02-16 18:27:28,675 [INFO] MSE is 1258009.0690085166
+param_grid = {
+    'n_estimators': [100, 200, 300],
+    'max_depth': [3, 5, 7],
+    'learning_rate': [0.05, 0.1, 0.2]
+}
+2025-02-16 18:27:28,675 [INFO] cross validation mse is 1515190.4925837559
+2025-02-16 18:27:28,675 [INFO] cross validation score is -0.4943409555739973
+2025-02-16 18:27:28,675 [INFO] model score is 0.51358290039752
+2025-02-16 18:33:41,730 [INFO] XgBoostRegression results
+2025-02-16 18:33:42,448 [INFO] MSE is 1066162.82464793
+2025-02-16 18:33:42,448 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 18:33:42,448 [INFO] cross validation score is -0.5477215576858109
+2025-02-16 18:33:42,448 [INFO] model score is 0.5877614544718972
+2025-02-16 18:35:02,699 [INFO] XgBoostRegression results
+best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 18:35:03,415 [INFO] MSE is 1066162.82464793
+2025-02-16 18:35:03,415 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 18:35:03,415 [INFO] cross validation score is -0.5477215576858109
+2025-02-16 18:35:03,415 [INFO] model score is 0.5877614544718972
+2025-02-16 18:39:29,002 [INFO] XgBoostRegression results
+best params is {'learning_rate': 0.6, 'max_depth': 9, 'n_estimators': 100}
+2025-02-16 18:39:31,967 [INFO] MSE is 1472849.633416293
+2025-02-16 18:39:31,967 [INFO] cross validation mse is 1607673.8611721783
+2025-02-16 18:39:31,967 [INFO] cross validation score is -0.46058749423748485
+2025-02-16 18:39:31,967 [INFO] model score is 0.43051344820465753
+2025-02-16 18:58:09,982 [INFO] XgBoostRegression results
+2025-02-16 18:59:13,896 [INFO] best params is {'learning_rate': 0.8, 'max_depth': 8, 'n_estimators': 5}
+2025-02-16 18:59:14,219 [INFO] MSE is 1449692.1053907382
+2025-02-16 18:59:14,219 [INFO] cross validation mse is 1605182.3928671605
+2025-02-16 18:59:14,219 [INFO] cross validation score is -0.4641581947744691
+2025-02-16 18:59:14,219 [INFO] model score is 0.4394674517119862
+2025-02-16 19:07:00,761 [INFO] XgBoostRegression results
+2025-02-16 19:07:48,945 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 8, 'n_estimators': 5}
+2025-02-16 19:07:49,236 [INFO] MSE is 1320430.3786161388
+2025-02-16 19:07:49,236 [INFO] cross validation mse is 1534545.9818285683
+2025-02-16 19:07:49,236 [INFO] cross validation score is -0.49240943886450345
+2025-02-16 19:07:49,236 [INFO] model score is 0.48944730939048686
+2025-02-16 19:09:53,103 [INFO] XgBoostRegression results
+2025-02-16 19:10:01,039 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 19:10:01,753 [INFO] MSE is 1066162.82464793
+2025-02-16 19:10:01,754 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 19:10:01,754 [INFO] cross validation score is -0.5477215576858109
+2025-02-16 19:10:01,754 [INFO] model score is 0.5877614544718972
+2025-02-16 19:13:38,755 [INFO] LinearRegression results
+2025-02-16 19:13:38,778 [INFO] MSE is 947341.1633563662
+2025-02-16 19:13:38,778 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 19:13:38,778 [INFO] cross validation score is -0.614916129962608
+2025-02-16 19:13:38,778 [INFO] model score is 0.6337045953277438
+2025-02-16 19:13:38,778 [INFO] RandomForestRegressor results
+2025-02-16 19:13:44,754 [INFO] best params is {'max_depth': 19, 'n_estimators': 431}
+2025-02-16 19:13:49,419 [INFO] MSE is 1198621.698655882
+2025-02-16 19:13:49,419 [INFO] cross validation mse is 1251086.8580192395
+2025-02-16 19:13:49,419 [INFO] cross validation score is -0.581932432410956
+2025-02-16 19:13:49,419 [INFO] model score is 0.536545399755902
+2025-02-16 19:16:04,198 [INFO] LinearRegression results
+2025-02-16 19:16:04,220 [INFO] MSE is 947341.1633563662
+2025-02-16 19:16:04,220 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 19:16:04,220 [INFO] cross validation score is -0.614916129962608
+2025-02-16 19:16:04,220 [INFO] model score is 0.6337045953277438
+2025-02-16 19:16:04,220 [INFO] RandomForestRegressor results
+2025-02-16 19:16:13,445 [INFO] best params is {'max_depth': 4, 'n_estimators': 250}
+2025-02-16 19:16:14,970 [INFO] MSE is 997172.1959945537
+2025-02-16 19:16:14,970 [INFO] cross validation mse is 1484394.157586686
+2025-02-16 19:16:14,970 [INFO] cross validation score is -0.5108712185121054
+2025-02-16 19:16:14,970 [INFO] model score is 0.6144371139055573
+2025-02-16 19:20:53,649 [INFO] LinearRegression results
+2025-02-16 19:20:53,680 [INFO] MSE is 947341.1633563662
+2025-02-16 19:20:53,681 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 19:20:53,681 [INFO] cross validation score is -0.614916129962608
+2025-02-16 19:20:53,681 [INFO] model score is 0.6337045953277438
+2025-02-16 19:20:53,681 [INFO] RandomForestRegressor results
+2025-02-16 19:20:56,664 [INFO] best params is {'max_depth': 4, 'n_estimators': 250}
+2025-02-16 19:20:58,166 [INFO] MSE is 1009266.0984290788
+2025-02-16 19:20:58,166 [INFO] cross validation mse is 1475968.7838986127
+2025-02-16 19:20:58,166 [INFO] cross validation score is -0.5120861638771006
+2025-02-16 19:20:58,166 [INFO] model score is 0.6097609306490142
+2025-02-16 19:21:37,106 [INFO] LinearRegression results
+2025-02-16 19:21:37,127 [INFO] MSE is 947341.1633563662
+2025-02-16 19:21:37,127 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 19:21:37,127 [INFO] cross validation score is -0.614916129962608
+2025-02-16 19:21:37,127 [INFO] model score is 0.6337045953277438
+2025-02-16 19:21:37,127 [INFO] RandomForestRegressor results
+2025-02-16 19:21:46,482 [INFO] best params is {'max_depth': 4, 'n_estimators': 250}
+2025-02-16 19:21:48,023 [INFO] MSE is 1012432.3702549207
+2025-02-16 19:21:48,023 [INFO] cross validation mse is 1456790.6434977802
+2025-02-16 19:21:48,023 [INFO] cross validation score is -0.5088845558219228
+2025-02-16 19:21:48,023 [INFO] model score is 0.6085366717815539
+2025-02-16 19:21:48,023 [INFO] XgBoostRegression results
+2025-02-16 19:21:49,785 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 19:21:50,467 [INFO] MSE is 1066162.82464793
+2025-02-16 19:21:50,467 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 19:21:50,467 [INFO] cross validation score is -0.5477215576858109
+2025-02-16 19:21:50,467 [INFO] model score is 0.5877614544718972
+2025-02-16 19:29:17,187 [INFO] LinearRegression results
+2025-02-16 19:29:17,209 [INFO] MSE is 947341.1633563662
+2025-02-16 19:29:17,209 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 19:29:17,209 [INFO] cross validation score is -0.614916129962608
+2025-02-16 19:29:17,209 [INFO] model score is 0.6337045953277438
+2025-02-16 19:29:17,209 [INFO] RandomForestRegressor results
+2025-02-16 19:29:26,306 [INFO] best params is {'max_depth': 4, 'n_estimators': 300}
+2025-02-16 19:29:28,076 [INFO] MSE is 1005874.7546308213
+2025-02-16 19:29:28,076 [INFO] cross validation mse is 1474358.2501073983
+2025-02-16 19:29:28,076 [INFO] cross validation score is -0.5092007776606572
+2025-02-16 19:29:28,076 [INFO] model score is 0.611072215006768
+2025-02-16 19:29:28,076 [INFO] XgBoostRegression results
+2025-02-16 19:29:30,031 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 19:29:30,702 [INFO] MSE is 2004167.5457974668
+2025-02-16 19:29:30,702 [INFO] cross validation mse is 2505791.5280870358
+2025-02-16 19:29:30,703 [INFO] cross validation score is -0.17076997171451908
+2025-02-16 19:29:30,703 [INFO] model score is 0.2250760437581356
+2025-02-16 19:43:26,914 [INFO] >>>>> LinearRegression results
+2025-02-16 19:43:26,942 [INFO] MSE is 947341.1633563662
+2025-02-16 19:43:26,942 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 19:43:26,942 [INFO] cross validation score is -0.614916129962608
+2025-02-16 19:43:26,942 [INFO] model score is 0.6337045953277438
+2025-02-16 19:43:26,942 [INFO] model score for training data is 0.6337045953277438
+2025-02-16 19:43:26,942 [INFO] >>>>> RandomForestRegressor results
+2025-02-16 19:43:36,124 [INFO] best params is {'max_depth': 4, 'n_estimators': 250}
+2025-02-16 19:43:37,604 [INFO] MSE is 992418.0382032999
+2025-02-16 19:43:37,604 [INFO] cross validation mse is 1461071.3605893934
+2025-02-16 19:43:37,604 [INFO] cross validation score is -0.505178378888858
+2025-02-16 19:43:37,604 [INFO] model score is 0.6162753388443464
+2025-02-16 19:43:37,604 [INFO] model score for training data is 0.6162753388443464
+2025-02-16 19:43:37,604 [INFO] >>>>> XgBoostRegression results
+2025-02-16 19:43:39,449 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 19:43:40,152 [INFO] MSE is 1066162.82464793
+2025-02-16 19:43:40,152 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 19:43:40,152 [INFO] cross validation score is -0.5477215576858109
+2025-02-16 19:43:40,152 [INFO] model score is 0.5877614544718972
+2025-02-16 19:43:40,152 [INFO] model score for training data is 0.5877614544718972
+2025-02-16 19:44:00,606 [INFO] >>>>> LinearRegression results
+2025-02-16 19:44:00,627 [INFO] MSE is 947341.1633563662
+2025-02-16 19:44:00,627 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 19:44:00,627 [INFO] cross validation score is -0.614916129962608
+2025-02-16 19:44:00,627 [INFO] model score is 0.6337045953277438
+2025-02-16 19:44:00,627 [INFO] model score for training data is 0.6773667537480725
+2025-02-16 19:44:00,627 [INFO] >>>>> RandomForestRegressor results
+2025-02-16 19:44:09,858 [INFO] best params is {'max_depth': 4, 'n_estimators': 300}
+2025-02-16 19:44:11,751 [INFO] MSE is 1015764.4248679704
+2025-02-16 19:44:11,751 [INFO] cross validation mse is 1475802.17717474
+2025-02-16 19:44:11,751 [INFO] cross validation score is -0.5115520447975965
+2025-02-16 19:44:11,751 [INFO] model score is 0.6072483119592562
+2025-02-16 19:44:11,751 [INFO] model score for training data is 0.6281031949290481
+2025-02-16 19:44:11,751 [INFO] >>>>> XgBoostRegression results
+2025-02-16 19:44:13,401 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 19:44:14,101 [INFO] MSE is 1066162.82464793
+2025-02-16 19:44:14,101 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 19:44:14,102 [INFO] cross validation score is -0.5477215576858109
+2025-02-16 19:44:14,102 [INFO] model score is 0.5877614544718972
+2025-02-16 19:44:14,102 [INFO] model score for training data is 0.8635812330769381
+2025-02-16 20:14:37,161 [INFO] >>>>> LinearRegression results
+2025-02-16 20:14:37,191 [INFO] MSE is 824393.9730844895
+2025-02-16 20:14:37,191 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 20:14:37,192 [INFO] cross validation score is -0.614916129962608
+2025-02-16 20:14:37,192 [INFO] model score is 0.6812428978484514
+2025-02-16 20:14:37,192 [INFO] model score for training data is 0.669611165860934
+2025-02-16 20:14:37,192 [INFO] >>>>> RandomForestRegressor results
+2025-02-16 20:14:46,220 [INFO] best params is {'max_depth': 4, 'n_estimators': 150}
+2025-02-16 20:14:47,202 [INFO] MSE is 1017996.3958544593
+2025-02-16 20:14:47,202 [INFO] cross validation mse is 1470501.4064741177
+2025-02-16 20:14:47,202 [INFO] cross validation score is -0.5071201208913528
+2025-02-16 20:14:47,202 [INFO] model score is 0.606385306373374
+2025-02-16 20:14:47,202 [INFO] model score for training data is 0.6333914629285227
+2025-02-16 20:14:47,202 [INFO] >>>>> XgBoostRegression results
+2025-02-16 20:14:49,076 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 20:14:49,777 [INFO] MSE is 2004167.5457974668
+2025-02-16 20:14:49,777 [INFO] cross validation mse is 2505791.5280870358
+2025-02-16 20:14:49,777 [INFO] cross validation score is -0.17076997171451908
+2025-02-16 20:14:49,777 [INFO] model score is 0.2250760437581356
+2025-02-16 20:14:49,777 [INFO] model score for training data is 0.1953488230157121
+2025-02-16 20:24:55,663 [INFO] >>>>> LinearRegression results
+2025-02-16 20:24:55,698 [INFO] MSE is 824393.9730844895
+2025-02-16 20:24:55,698 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 20:24:55,698 [INFO] cross validation score is -0.614916129962608
+2025-02-16 20:24:55,698 [INFO] model score is 0.6812428978484514
+2025-02-16 20:24:55,698 [INFO] model score for training data is 0.669611165860934
+2025-02-16 20:24:55,698 [INFO] >>>>> RandomForestRegressor results
+2025-02-16 20:25:04,983 [INFO] best params is {'max_depth': 4, 'n_estimators': 300}
+2025-02-16 20:25:06,819 [INFO] MSE is 1011573.0476049718
+2025-02-16 20:25:06,819 [INFO] cross validation mse is 1474942.675307275
+2025-02-16 20:25:06,819 [INFO] cross validation score is -0.5104472714242697
+2025-02-16 20:25:06,819 [INFO] model score is 0.6088689342757665
+2025-02-16 20:25:06,819 [INFO] model score for training data is 0.6314207953260482
+2025-02-16 20:25:06,819 [INFO] >>>>> XgBoostRegression results
+2025-02-16 20:25:08,793 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 20:25:09,514 [INFO] MSE is 2004167.5457974668
+2025-02-16 20:25:09,514 [INFO] cross validation mse is 2505791.5280870358
+2025-02-16 20:25:09,514 [INFO] cross validation score is -0.17076997171451908
+2025-02-16 20:25:09,514 [INFO] model score is 0.2250760437581356
+2025-02-16 20:25:09,514 [INFO] model score for training data is 0.1953488230157121
+2025-02-16 20:30:40,200 [INFO] >>>>> LinearRegression results
+2025-02-16 20:30:40,225 [INFO] MSE is 824393.9730844895
+2025-02-16 20:30:40,225 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 20:30:40,225 [INFO] cross validation score is -0.614916129962608
+2025-02-16 20:30:40,225 [INFO] model score is 0.6812428978484514
+2025-02-16 20:30:40,225 [INFO] model score for training data is 0.669611165860934
+2025-02-16 20:30:40,225 [INFO] >>>>> RandomForestRegressor results
+2025-02-16 20:30:49,195 [INFO] best params is {'max_depth': 4, 'n_estimators': 100}
+2025-02-16 20:30:49,805 [INFO] MSE is 1008917.8982667929
+2025-02-16 20:30:49,805 [INFO] cross validation mse is 1478443.088512587
+2025-02-16 20:30:49,805 [INFO] cross validation score is -0.5118702429582229
+2025-02-16 20:30:49,805 [INFO] model score is 0.6098955644264588
+2025-02-16 20:30:49,805 [INFO] model score for training data is 0.6344382797618499
+2025-02-16 20:30:49,805 [INFO] >>>>> XgBoostRegression results
+2025-02-16 20:30:51,652 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 20:30:52,358 [INFO] MSE is 1066162.82464793
+2025-02-16 20:30:52,358 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 20:30:52,358 [INFO] cross validation score is -0.5477215576858109
+2025-02-16 20:30:52,358 [INFO] model score is 0.5877614544718972
+2025-02-16 20:30:52,358 [INFO] model score for training data is 0.8635812330769381
+2025-02-16 20:32:26,011 [INFO] >>>>> LinearRegression results
+2025-02-16 20:32:26,033 [INFO] MSE is 824393.9730844895
+2025-02-16 20:32:26,034 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 20:32:26,034 [INFO] cross validation score is 0.614916129962608
+2025-02-16 20:32:26,034 [INFO] model score is 0.6812428978484514
+2025-02-16 20:32:26,034 [INFO] model score for training data is 0.669611165860934
+2025-02-16 20:32:26,034 [INFO] >>>>> RandomForestRegressor results
+2025-02-16 20:32:35,010 [INFO] best params is {'max_depth': 4, 'n_estimators': 100}
+2025-02-16 20:32:35,616 [INFO] MSE is 999014.2640841666
+2025-02-16 20:32:35,617 [INFO] cross validation mse is 1473034.6131598006
+2025-02-16 20:32:35,617 [INFO] cross validation score is 0.5115679946432851
+2025-02-16 20:32:35,617 [INFO] model score is 0.6137248667211026
+2025-02-16 20:32:35,617 [INFO] model score for training data is 0.6363527040710673
+2025-02-16 20:32:35,617 [INFO] >>>>> XgBoostRegression results
+2025-02-16 20:32:37,424 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 20:32:38,135 [INFO] MSE is 1066162.82464793
+2025-02-16 20:32:38,135 [INFO] cross validation mse is 1354781.149884568
+2025-02-16 20:32:38,135 [INFO] cross validation score is 0.5477215576858109
+2025-02-16 20:32:38,135 [INFO] model score is 0.5877614544718972
+2025-02-16 20:32:38,136 [INFO] model score for training data is 0.8635812330769381
+2025-02-16 20:57:14,883 [INFO] >>>>> LinearRegression results
+2025-02-16 20:59:07,734 [INFO] >>>>> LinearRegression results
+2025-02-16 20:59:07,758 [INFO] MSE is 824393.9730844895
+2025-02-16 20:59:07,758 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 20:59:07,758 [INFO] cross validation score is 0.614916129962608
+2025-02-16 20:59:07,758 [INFO] model score is 0.6812428978484514
+2025-02-16 20:59:07,758 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:01:14,055 [INFO] >>>>> LinearRegression results
+2025-02-16 21:01:14,078 [INFO] MSE is 824393.9730844895
+2025-02-16 21:01:14,078 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:01:14,078 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:01:14,078 [INFO] model score is 0.6812428978484514
+2025-02-16 21:01:14,078 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:08:00,233 [INFO] >>>>> LinearRegression results
+2025-02-16 21:08:00,254 [INFO] MSE is 824393.9730844895
+2025-02-16 21:08:00,254 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:08:00,254 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:08:00,254 [INFO] model score is 0.6812428978484514
+2025-02-16 21:08:00,254 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:08:32,242 [INFO] >>>>> LinearRegression results
+2025-02-16 21:08:32,267 [INFO] MSE is 824393.9730844895
+2025-02-16 21:08:32,267 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:08:32,267 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:08:32,267 [INFO] model score is 0.6812428978484514
+2025-02-16 21:08:32,267 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:12:08,085 [INFO] >>>>> LinearRegression results
+2025-02-16 21:12:08,108 [INFO] MSE is 824393.9730844895
+2025-02-16 21:12:08,108 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:12:08,108 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:12:08,109 [INFO] model score is 0.6812428978484514
+2025-02-16 21:12:08,109 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:20:16,490 [INFO] >>>>> LinearRegression results
+2025-02-16 21:20:16,522 [INFO] MSE is 824393.9730844895
+2025-02-16 21:20:16,523 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:20:16,523 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:20:16,523 [INFO] model score is 0.6812428978484514
+2025-02-16 21:20:16,523 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:23:21,133 [INFO] >>>>> LinearRegression results
+2025-02-16 21:23:21,155 [INFO] MSE is 824393.9730844895
+2025-02-16 21:23:21,156 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:23:21,156 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:23:21,156 [INFO] model score is 0.6812428978484514
+2025-02-16 21:23:21,156 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:23:32,078 [INFO] >>>>> LinearRegression results
+2025-02-16 21:23:32,101 [INFO] MSE is 824393.9730844895
+2025-02-16 21:23:32,101 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:23:32,101 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:23:32,101 [INFO] model score is 0.6812428978484514
+2025-02-16 21:23:32,101 [INFO] model score for training data is 0.669611165860934
+2025-02-16 21:26:35,954 [INFO] >>>>> LinearRegression results
+2025-02-16 21:26:35,975 [INFO] MSE is 824393.9730844895
+2025-02-16 21:26:35,975 [INFO] cross validation mse is 1148587.081100525
+2025-02-16 21:26:35,975 [INFO] cross validation score is 0.614916129962608
+2025-02-16 21:26:35,975 [INFO] model score is 0.6812428978484514
+2025-02-16 21:26:35,975 [INFO] model score for training data is 0.669611165860934
+2025-02-16 22:04:53,801 [INFO] >>>>> LinearRegression results
+2025-02-16 22:04:53,842 [INFO] MSE is 824393.9730844895
+2025-02-16 22:04:53,842 [INFO] MAPE is 51.80826494091808
+2025-02-16 22:04:53,842 [INFO] MAPE is 51.80826494091808
+2025-02-16 22:04:53,842 [INFO] --------------------
+2025-02-16 22:04:53,842 [INFO] cross validation MSE is 1148587.081100525
+2025-02-16 22:04:53,842 [INFO] cross validation cv_MAPE is 1.3002949069809755
+2025-02-16 22:04:53,842 [INFO] cross validation score is 0.614916129962608
+2025-02-16 22:04:53,842 [INFO] --------------------
+2025-02-16 22:04:53,842 [INFO] model score is 0.6812428978484514
+2025-02-16 22:04:53,842 [INFO] model score for training data is 0.669611165860934
+2025-02-16 22:07:33,179 [INFO] >>>>> LinearRegression results
+2025-02-16 22:07:33,222 [INFO] MSE is 824393.9730844895
+2025-02-16 22:07:33,222 [INFO] MAPE is 51.80826494091808
+2025-02-16 22:07:33,222 [INFO] SMAPE is 51.80826494091808
+2025-02-16 22:07:33,222 [INFO] --------------------
+2025-02-16 22:07:33,222 [INFO] cross validation MSE is 1148587.081100525
+2025-02-16 22:07:33,222 [INFO] cross validation MAPE is 1.3002949069809755
+2025-02-16 22:07:33,222 [INFO] cross validation score is 0.614916129962608
+2025-02-16 22:07:33,222 [INFO] --------------------
+2025-02-16 22:07:33,222 [INFO] model score is 0.6812428978484514
+2025-02-16 22:07:33,222 [INFO] model score for training data is 0.669611165860934
+2025-02-16 22:07:33,222 [INFO] >>>>> RandomForestRegressor results
+2025-02-16 22:07:42,295 [INFO] best params is {'max_depth': 4, 'n_estimators': 100}
+2025-02-16 22:07:43,182 [INFO] MSE is 1001237.2522928773
+2025-02-16 22:07:43,182 [INFO] MAPE is 97.32834279007957
+2025-02-16 22:07:43,182 [INFO] SMAPE is 97.32834279007957
+2025-02-16 22:07:43,182 [INFO] --------------------
+2025-02-16 22:07:43,182 [INFO] cross validation MSE is 1455566.3921024387
+2025-02-16 22:07:43,182 [INFO] cross validation MAPE is 1.621251389857773
+2025-02-16 22:07:43,182 [INFO] cross validation score is 0.5103663742183778
+2025-02-16 22:07:43,182 [INFO] --------------------
+2025-02-16 22:07:43,182 [INFO] model score is 0.6128653343826086
+2025-02-16 22:07:43,182 [INFO] model score for training data is 0.6385683575854735
+2025-02-16 22:07:43,183 [INFO] >>>>> XgBoostRegression results
+2025-02-16 22:07:45,012 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 22:07:46,026 [INFO] MSE is 1066162.82464793
+2025-02-16 22:07:46,026 [INFO] MAPE is 56.33675941871952
+2025-02-16 22:07:46,027 [INFO] SMAPE is 56.33675941871952
+2025-02-16 22:07:46,027 [INFO] --------------------
+2025-02-16 22:07:46,027 [INFO] cross validation MSE is 1354781.149884568
+2025-02-16 22:07:46,027 [INFO] cross validation MAPE is 1.0634165041526438
+2025-02-16 22:07:46,027 [INFO] cross validation score is 0.5477215576858109
+2025-02-16 22:07:46,027 [INFO] --------------------
+2025-02-16 22:07:46,027 [INFO] model score is 0.5877614544718972
+2025-02-16 22:07:46,027 [INFO] model score for training data is 0.8635812330769381
+2025-02-16 22:28:50,969 [INFO] 
+>>>>> LinearRegression results
+2025-02-16 22:28:51,010 [INFO] MSE is 824393.9730844895
+2025-02-16 22:28:51,010 [INFO] MAPE is 51.80826494091808
+2025-02-16 22:28:51,010 [INFO] SMAPE is 51.80826494091808
+2025-02-16 22:28:51,010 [INFO] --------------------
+2025-02-16 22:28:51,010 [INFO] cross validation MSE is 1148587.081100525
+2025-02-16 22:28:51,010 [INFO] cross validation MAPE is 1.3002949069809755
+2025-02-16 22:28:51,010 [INFO] cross validation score is 0.614916129962608
+2025-02-16 22:28:51,010 [INFO] --------------------
+2025-02-16 22:28:51,010 [INFO] model score is 0.6812428978484514
+2025-02-16 22:28:51,010 [INFO] model score for training data is 0.669611165860934
+2025-02-16 22:28:51,018 [INFO] 
+>>>>> RandomForestRegressor results
+2025-02-16 22:29:00,289 [INFO] best params is {'max_depth': 4, 'n_estimators': 250}
+2025-02-16 22:29:02,465 [INFO] MSE is 1027671.9932435062
+2025-02-16 22:29:02,465 [INFO] MAPE is 97.54338666821751
+2025-02-16 22:29:02,465 [INFO] SMAPE is 97.54338666821751
+2025-02-16 22:29:02,465 [INFO] --------------------
+2025-02-16 22:29:02,465 [INFO] cross validation MSE is 1478336.5354724308
+2025-02-16 22:29:02,466 [INFO] cross validation MAPE is 1.6130668050268948
+2025-02-16 22:29:02,466 [INFO] cross validation score is 0.5108518861510768
+2025-02-16 22:29:02,466 [INFO] --------------------
+2025-02-16 22:29:02,466 [INFO] model score is 0.6026441759357288
+2025-02-16 22:29:02,466 [INFO] model score for training data is 0.631595376398205
+2025-02-16 22:29:02,473 [INFO] 
+>>>>> XgBoostRegression results
+2025-02-16 22:29:04,357 [INFO] best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+2025-02-16 22:29:05,384 [INFO] MSE is 1066162.82464793
+2025-02-16 22:29:05,384 [INFO] MAPE is 56.33675941871952
+2025-02-16 22:29:05,384 [INFO] SMAPE is 56.33675941871952
+2025-02-16 22:29:05,384 [INFO] --------------------
+2025-02-16 22:29:05,384 [INFO] cross validation MSE is 1354781.149884568
+2025-02-16 22:29:05,384 [INFO] cross validation MAPE is 1.0634165041526438
+2025-02-16 22:29:05,384 [INFO] cross validation score is 0.5477215576858109
+2025-02-16 22:29:05,384 [INFO] --------------------
+2025-02-16 22:29:05,384 [INFO] model score is 0.5877614544718972
+2025-02-16 22:29:05,384 [INFO] model score for training data is 0.8635812330769381
+2025-02-16 23:02:55,740 [INFO] 
+>>>>> LinearRegression results
+2025-02-16 23:02:55,886 [INFO] MSE is 824387.4919266056
+2025-02-16 23:02:55,886 [INFO] MAPE is 51.8092145188781
+2025-02-16 23:02:55,886 [INFO] SMAPE is 51.8092145188781
+2025-02-16 23:02:55,886 [INFO] --------------------
+2025-02-16 23:02:55,886 [INFO] cross validation MSE is 1148587.081100525
+2025-02-16 23:02:55,886 [INFO] cross validation MAPE is 1.3002949069809755
+2025-02-16 23:02:55,886 [INFO] cross validation score is 0.614916129962608
+2025-02-16 23:02:55,886 [INFO] --------------------
+2025-02-16 23:02:55,886 [INFO] model score is 0.6812428978484514
+2025-02-16 23:02:55,886 [INFO] model score for training data is 0.669611165860934
+2025-02-16 23:02:55,890 [INFO] 
+>>>>> RandomForestRegressor results
+2025-02-16 23:23:40,274 [INFO] 
+>>>>> LinearRegression results
+2025-02-16 23:24:35,515 [INFO] 
+>>>>> LinearRegression results
+2025-02-16 23:28:25,660 [INFO] 
+>>>>> LinearRegression results
+2025-02-16 23:30:03,490 [INFO] 
+>>>>> LinearRegression results
+2025-02-16 23:30:08,504 [INFO] MSE is 824387.4919266056
+2025-02-16 23:30:08,504 [INFO] MAPE is 51.8092145188781
+2025-02-16 23:30:08,504 [INFO] SMAPE is 51.8092145188781
+2025-02-16 23:30:08,504 [INFO] custom_metric is 108.66325462962962
+2025-02-16 23:30:08,504 [INFO] --------------------
+2025-02-16 23:30:08,504 [INFO] cross validation MSE is 1148587.081100525
+2025-02-16 23:30:08,505 [INFO] cross validation MAPE is 1.3002949069809755
+2025-02-16 23:30:08,505 [INFO] cross validation score is 0.614916129962608
+2025-02-16 23:30:08,505 [INFO] --------------------
+2025-02-16 23:30:08,505 [INFO] model score is 0.6812428978484514
+2025-02-16 23:30:08,505 [INFO] model score for training data is 0.669611165860934
+2025-02-16 23:30:08,510 [INFO] 
+>>>>> RandomForestRegressor results
+2025-02-16 23:30:39,352 [INFO] best params is {'max_depth': 4, 'n_estimators': 100}
+2025-02-16 23:30:42,043 [INFO] MSE is 1007847.2096330276
+2025-02-16 23:30:42,043 [INFO] MAPE is 97.56569016177991
+2025-02-16 23:30:42,043 [INFO] SMAPE is 97.56569016177991
+2025-02-16 23:30:42,043 [INFO] custom_metric is 137.98995833333333
+2025-02-16 23:30:42,044 [INFO] --------------------
+2025-02-16 23:30:42,044 [INFO] cross validation MSE is 1489781.2821363169
+2025-02-16 23:30:42,044 [INFO] cross validation MAPE is 1.6075169055004364
+2025-02-16 23:30:42,044 [INFO] cross validation score is 0.5118047318899809
+2025-02-16 23:30:42,044 [INFO] --------------------
+2025-02-16 23:30:42,044 [INFO] model score is 0.6103093188112424
+2025-02-16 23:30:42,044 [INFO] model score for training data is 0.6384967888171571
+2025-02-16 23:30:42,060 [INFO] 
+>>>>> XgBoostRegression results
