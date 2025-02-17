@@ -33,14 +33,18 @@ transaction_amount is our target column in this regression problem, what is the 
 
 **Decision**
 
-  5% is not a high percentage so we decide to remove the samples with missing values for now, based on the model result we can come back and make different decision
-  robust models like Random forest/LGM/XGBoost will automatically handle missing values but not the target
+  5% is not a high percentage so we decide to remove the samples with missing values for now. Once we get the prediction results we can come back and make different decision.
+
+  robust models like Random forest/LGM/XGBoost will automatically handle missing values but not the values in target column
 
 ## Handle outliers
-BY visualiting the data in numerical columns, transaction_amount and customer_id. There are some values which are not in the range, we need to replace those values with the value which is in the range
-Outlier samples cause underfitting for our model
+By visualiting the data in numerical columns which are transaction_amount and customer_id.
+
+There are some values which are not in the range, we need to replace those values with the value which is in the range since 
+outlier samples cause underfitting for our model
+
 ## Categorical columns
-Check the cardinality of the categorical columns and drop the one which have high cardinality. replace categorical features with numerical values 
+Check the cardinality of the categorical columns and drop the one which have high cardinality. then replace categorical features with numerical values 
 
 
 # Evaluation Metrics
@@ -55,7 +59,8 @@ Machine learning pipeline is a cycle, to improve the result we need to back to t
 ## Data prespective
 - Pick the diffrenet approach to fill the null values for missing data(fill with median and mean)
 - Pick different columns as features(use transaction_date column)
-- Use different range of parameters for models. The steps are changing the range, monitor the performance 
+- Use different range of hyperparameters for models(RandomForrest and XDBoost). The steps are changing the range and monitor the performance untill we find the best ranges(values) for hyper parameter
+
 - Use different method for tune hyper parameters, we currently use GridSearchCV to tune hyperparameters, we can also try RandomizedSearchCV
 
 # Tune hyperparameters
