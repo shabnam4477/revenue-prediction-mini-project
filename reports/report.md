@@ -60,11 +60,21 @@ Machine learning pipeline is a cycle, to improve the result we need to back to t
 - Pick the diffrenet approach to fill the null values for missing data(fill with median and mean)
 - Pick different columns as features(use transaction_date column)
 - Use different range of hyperparameters for models(RandomForrest and XDBoost). The steps are changing the range and monitor the performance untill we find the best ranges(values) for hyper parameter
-
-- Use different method for tune hyper parameters, we currently use GridSearchCV to tune hyperparameters, we can also try RandomizedSearchCV
-
-# Tune hyperparameters
-Using RandomizedSearchCV and GridSearchCV methods for tune hyperparameters
+```
+param_grid = {
+    'n_estimators': [100, 200, 300],
+    'max_depth': [3, 5, 7],
+    'learning_rate': [0.05, 0.1, 0.2]
+}
+model score is 0.51358290039752
+```
+changed the param ranges improve the model score
+```
+best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
+model score is 0.5877614544718972
+```
+## Tune hyperparameters
+Use different method for tune hyper parameters, we currently use GridSearchCV to tune hyperparameters, we can also try RandomizedSearchCV
 
 In the first run the score of random forrest using RandomizedSearchCV, was 0.5754971243809461, changed it to GridSearchCV, improved the score to 0.61
 ### GridSearchCV
