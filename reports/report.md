@@ -10,20 +10,29 @@ We are trying to build a revenue prediction model, the problem is regression and
 ## Handle missing values
 Out of 604 samples, 30 of them are null in the the transaction_amount column, which is approximately the 5% of the samples.
 transaction_amount is our target column in this regression problem, what is the best way to fill the null values?
+
 **thaughts**:
 - drop the null column
+
   impossible, because the transaction_amount is our target column
 - drop the sample with null values
+
   considering our dataset size is limited, we prefer to not loose the data
 - fill with mean, median
+
   we have outlier in our dataset, mean and median is so biased to outliers. fill the null values with mean and median cause to inconsistent data
 - fill with random value
+
     since the missing values are in the target column, random guess may cause the bad model performance
 - Impute the missing value using KNN
+
    imputing with KNN Imputer, causes data leakage if the data has not been splitted before imputing
 - Analyse the data and research more then choose the proper method
+
   Target variable is not advised to be imputed, this is because they control how the learning algorithm learns
+
 **Decision**
+
   5% is not a high percentage so we decide to remove the samples with missing values for now, based on the model result we can come back and make different decision
   robust models like Random forest/LGM/XGBoost will automatically handle missing values but not the target
 
