@@ -76,6 +76,7 @@ best params is {'learning_rate': 0.2, 'max_depth': 4, 'n_estimators': 40}
 model score is 0.5877614544718972
 ```
 ### Tune hyperparameters
+
 Use different method for tune hyper parameters, we currently use GridSearchCV to tune hyperparameters, we can also try RandomizedSearchCV
 
 In the first run the score of random forrest using RandomizedSearchCV, was 0.5754971243809461, changed it to GridSearchCV, improved the score to 0.61
